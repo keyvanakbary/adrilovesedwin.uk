@@ -1,0 +1,138 @@
+/* Bootstrap overriding */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.YouTubePopUp-Content iframe {
+  height: 383px !important;
+}
+
+.YouTubePopUp-Close{
+  bottom: 450px;
+  background-image: url('/components/youtube/close.png');
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.bg-primary {
+  background-color: #003562 !important;
+  color: #fff;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.background-head {
+  background-color: #020417 !important;
+  background-image: url('/assets/images/background.jpg');
+}
+
+.background-video {
+  background-color: #020417 !important;
+  background-image: url('/assets/images/video-background.jpg');
+  height: 500px;
+}
+
+.background-video a {
+  line-height: 500px;
+}
+
+.vertical-parent {
+  position: relative;
+}
+
+.vertical-child {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bg-primary h2 {
+  color: #fff;
+}
+
+h1, h2, h3, .countdown .label-number {
+  font-family: 'Lobster', cursive;
+}
+
+h2, h3 {
+  color: #003562;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+}
+
+@media (max-width: 575px) {
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Counters */
+.counter {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.counter canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 575px) {
+  .countdown, .countdown canvas {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+/* Map boxes */
+.infoBox {
+  border-radius: .25rem;
+  overflow: hidden;
+}
+.infoBox > img {
+  position: absolute !important;
+  right: 0;
+}
+
+/* Title decoration */
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy > span {
+  display: inline-block;
+  position: relative;
+}
+.fancy > span:before,
+.fancy > span:after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #fff;
+  top: 5px;
+  width: 50px;
+}
+.fancy > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
