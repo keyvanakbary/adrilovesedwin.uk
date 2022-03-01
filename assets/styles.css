@@ -136,3 +136,28 @@ h2, h3 {
   left: 100%;
   margin-left: 15px;
 }
+
+/* languages bar */
+.lang{
+  position: fixed;
+  background-color: #333;
+  width: 100%;
+  z-index: 999;
+}
+.lang ul {
+  list-style-type: none;
+  color: #fff;
+  margin-bottom: 0px !important;
+  text-align: right;
+  padding-right: 16px;
+} 
+.lang ul li:first-child::after{
+  content: " /";
+  color: #fff;
+}
+.lang li{
+  display: inline-block;  
+}
+.lang a{
+  color: #fff;
+}
